@@ -14,6 +14,12 @@ print("Model : " + json_dict["model"])
 # Serial number
 print("Serial number : " + json_dict["serialNumber"])
 
+# MAC address of wireless LAN
+print("MAC address of wireless LAN : " + json_dict["_wlanMacAddress"])
+
+# MAC address of Bluetooth
+print("MAC address of Bluetooth : " + json_dict["_bluetoothMacAddress"])
+
 # endpoints
 print("endpoints :")
 print("    httpPort : " + str(json_dict["endpoints"]["httpPort"]))
