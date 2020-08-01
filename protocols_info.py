@@ -32,13 +32,22 @@ print("URL of the support page : " + json_dict["supportUrl"])
 # Presence of GPS
 print("Presence of GPS : " + json_dict["gps"])
 
-# endpoints
-print("endpoints :")
-print("    httpPort : " + str(json_dict["endpoints"]["httpPort"]))
-print("    httpUpdatesPort : " + str(json_dict["endpoints"]["httpUpdatesPort"]))
+# Presence of gyroscope
+print("Presence of gyroscope : " + json_dict["gyro"])
+
+# Elapsed time after startup (sec)
+print("Elapsed time after startup (sec) : " + json_dict["uptime"])
 
 # api
 NumberOfElements = len(json_dict["api"])
 print("api :")
 for i in range(NumberOfElements):
     print(json_dict["api"][i])
+
+# endpoints
+print("endpoints :")
+print("    httpPort : " + str(json_dict["endpoints"]["httpPort"]))
+print("    httpUpdatesPort : " + str(json_dict["endpoints"]["httpUpdatesPort"]))
+
+# List of supported APIs
+print("List of supported APIs : " + json_dict["apiLevel"])
