@@ -26,7 +26,6 @@ print("Firmware version : " + json_dict["firmwareVersion"])
 # URL of the support page
 print("URL of the support page : " + json_dict["supportUrl"])
 
-
 # endpoints
 print("endpoints :")
 print("    httpPort : " + str(json_dict["endpoints"]["httpPort"]))
