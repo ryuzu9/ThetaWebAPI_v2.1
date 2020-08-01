@@ -5,8 +5,14 @@ cmdURL = "http://192.168.1.1/osc/info"
 res = requests.get(cmdURL)
 json_dict = json.loads(res.text)
 
-# manufacturer
-print("manufacturer : " + json_dict["manufacturer"])
+# Manufacturer name
+print("Manufacturer name : " + json_dict["manufacturer"])
+
+# Model
+print("Model : " + json_dict["model"])
+
+# Serial number
+print("Serial number : " + json_dict["serialNumber"])
 
 # endpoints
 print("endpoints :")
