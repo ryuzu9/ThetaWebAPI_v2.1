@@ -20,6 +20,13 @@ print("MAC address of wireless LAN : " + json_dict["_wlanMacAddress"])
 # MAC address of Bluetooth
 print("MAC address of Bluetooth : " + json_dict["_bluetoothMacAddress"])
 
+# Firmware version
+print("Firmware version : " + json_dict["firmwareVersion"])
+
+# URL of the support page
+print("URL of the support page : " + json_dict["supportUrl"])
+
+
 # endpoints
 print("endpoints :")
 print("    httpPort : " + str(json_dict["endpoints"]["httpPort"]))
