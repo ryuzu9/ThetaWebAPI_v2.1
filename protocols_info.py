@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import requests
 import json
+import requests
 
 cmdURL = "http://192.168.1.1/osc/info"
 res = requests.get(cmdURL)
