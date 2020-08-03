@@ -30,13 +30,13 @@ print("Firmware version : " + json_dict["firmwareVersion"])
 print("URL of the support page : " + json_dict["supportUrl"])
 
 # Presence of GPS
-print("Presence of GPS : " + json_dict["gps"])
+print("Presence of GPS : " + str(json_dict["gps"]))
 
 # Presence of gyroscope
-print("Presence of gyroscope : " + json_dict["gyro"])
+print("Presence of gyroscope : " + str(json_dict["gyro"]))
 
 # Elapsed time after startup (sec)
-print("Elapsed time after startup (sec) : " + json_dict["uptime"])
+print("Elapsed time after startup (sec) : " + str(json_dict["uptime"]))
 
 # api
 NumberOfElements = len(json_dict["api"])
@@ -50,4 +50,4 @@ print("    httpPort : " + str(json_dict["endpoints"]["httpPort"]))
 print("    httpUpdatesPort : " + str(json_dict["endpoints"]["httpUpdatesPort"]))
 
 # List of supported APIs
-print("List of supported APIs : " + json_dict["apiLevel"])
+print("List of supported APIs : " + str(json_dict["apiLevel"]))
